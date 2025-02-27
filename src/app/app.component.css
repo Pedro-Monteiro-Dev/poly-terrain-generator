@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+
+html, body {
+  height: 100%;
+  margin: 0!important;
+  overflow: hidden;
+}
+  
+#threejs-container{
+  display: block;
+  width:100%!important;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+#header{
+  width: 100%;
+  height:60px;
+  /*box-shadow: 0px 10px black;*/
+  border-bottom: 1px solid;
+  /*overflow: auto;*/
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.test{
+  font-family: "Bangers", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#main_container{
+  display: flex;
+  height: 100vh;
+}
+
+.container_center{
+  display: flex;
+  justify-content: center;
+}
+
+.container{
+  display: flex;
+}
+
+.sidebar{
+  width: 250px;
+  border-right: 1px solid;
+}
+
+.sidebar p{
+  margin: 0;
+}
+
+.sidebar h1{
+  font-family: "Bangers", serif;
+  font-weight: 400;
+  font-style: normal;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+  padding: 15px;
+  
+}
+
+.general_button{
+  justify-content: center;
+  background-color: rgb(100, 160, 238);
+  width: 180px;
+  height:40px;
+  border-radius: 20px;
+  border-color: rgb(45, 63, 143);
+  margin-top: 15px;/*Temporary*/
+  color: rgb(27, 40, 94);
+  font-weight: bold;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  
+}
+
+
+
+.general_button:hover{
+  justify-content: center;
+  background-color: rgb(100, 160, 238);
+  border-color: rgb(45, 63, 143);
+  color: rgb(27, 40, 94);
+
+  transform: scale(1.05);
+}
+
+.general_button:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 768px) {
+  #main_container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-bottom: 1px solid;
+    
+  }
+}
+
+.myCanvasClass {
+   
+    
+  }
